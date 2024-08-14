@@ -1,0 +1,41 @@
+// Flexbox mixin
+@mixin flex($settings: null) {
+  @if $settings == null {
+    $settings: map-get($flex, "align-items") !default;
+  }
+
+  display: flex;
+  align-items: map-get($settings, "align-items");
+  justify-content: map-get($settings, "justify-content");
+}
+
+// Container mixin
+@mixin container($breakpoint: null) {
+  @if $breakpoint != null {
+    max-width: map-get($container-max-widths, $breakpoint);
+    padding-left: map-get($container-padding, $breakpoint);
+    padding-right: map-get($container-padding, $breakpoint);
+  } @else {
+    max-width: map-get($container-max-widths, sm);
+    padding-left: map-get($container-padding, sm);
+    padding-right: map-get($container-padding, sm);
+
+    @media (min-width: map-get($breakpoints, md)) {
+      max-width: map-get($container-max-widths, md);
+      padding-left: map-get($container-padding, md);
+      padding-right: map-get($container-padding, md);
+    }
+
+    @media (min-width: map-get($breakpoints, lg)) {
+      max-width: map-get($container-max-widths, lg);
+      padding-left: map-get($container-padding, lg);
+      padding-right: map-get($container-padding, lg);
+    }
+
+    @media (min-width: map-get($breakpoints, xl)) {
+      max-width: map-get($container-max-widths, xl);
+      padding-left: map-get($container-padding, xl);
+      padding-right: map-get($container-padding, xl);
+    }
+  }
+}

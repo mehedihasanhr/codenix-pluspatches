@@ -1,0 +1,99 @@
+// _buttons.scss
+
+// Define button base styles
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  font-family: var(--font);
+
+  &.disabled,
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--secondary-foreground);
+  }
+
+  &.loading {
+    cursor: progress;
+    pointer-events: none;
+  }
+
+  &--icon {
+    padding: 12px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    & > svg {
+      background: transparent;
+    }
+  }
+
+  // Variants
+  &--primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--primary-foreground);
+
+    &:hover {
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+    }
+
+    &:focus,
+    &:active {
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+    }
+  }
+
+  &--accent {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-foreground);
+
+    &:hover {
+      background-color: darken($accent, 10%);
+      border-color: darken($accent, 10%);
+    }
+
+    &:focus,
+    &:active {
+      background-color: darken($accent, 10%);
+      border-color: darken($accent, 10%);
+    }
+  }
+
+  &--outline {
+    background-color: var(--background);
+    border-color: var(--border);
+    color: $btn-outline-text;
+
+    &:hover {
+      background-color: darken(#fff, 3%);
+      border-color: darken(#fff, 3%);
+    }
+
+    &:focus,
+    &:active {
+      background-color: darken(#fff, 3%);
+      border-color: darken(#fff, 3%);
+    }
+  }
+}

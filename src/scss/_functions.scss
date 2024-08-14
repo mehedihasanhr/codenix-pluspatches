@@ -1,0 +1,8 @@
+@function darken($color, $amount) {
+  @if type-of($color) == "color" {
+    @return mix(black, $color, $amount);
+  } @else {
+    @warn "The color provided is not a valid color.";
+    @return null;
+  }
+}

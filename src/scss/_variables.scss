@@ -1,0 +1,68 @@
+:root {
+  /* Colors */
+  --background: #ffffff;
+  --foreground: #182641;
+  --secondary-text: #01bf93;
+
+  --primary: #4c4dc3;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f7f8fc;
+  --secondary-foreground: #54627d;
+
+  --accent: #e0ff01;
+  --accent-foreground: #182641;
+
+  --border: #e4e9f2;
+
+  /* Font */
+  --font: "Inter", sans-serif;
+}
+// _variables.scss
+
+$primary: #4c4dc3;
+$accent: #e0ff01;
+$btn-outline-text: #7c8aa5;
+
+// Breakpoints for responsive design
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+// Container max widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
+
+// Container padding
+$container-padding: (
+  sm: 15px,
+  md: 30px,
+  lg: 30px,
+  xl: 30px,
+);
+
+// Grid columns
+$grid-columns: 12;
+
+// Spacing units
+$spacing-unit: 8px;
+$spacing: (
+  xs: $spacing-unit * 0.5,
+  sm: $spacing-unit,
+  md: $spacing-unit * 1.5,
+  lg: $spacing-unit * 2,
+  xl: $spacing-unit * 3,
+);
+
+// Flexbox settings
+$flex: (
+  align-items: center,
+  justify-content: center,
+);
