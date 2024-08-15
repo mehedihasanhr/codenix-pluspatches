@@ -43,7 +43,7 @@
     padding-right: 30px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   .container {
     max-width: 1140px;
     padding-left: 30px;
@@ -435,7 +435,7 @@ body {
     grid-column: span 4;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   .sensor--container {
     gap: 40px;
   }
@@ -661,6 +661,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footer--btn-subscribe-sm > span.btn--icon {
+  display: block;
+  background: var(--primary);
+  color: var(--secondary);
+}
+.footer--btn-subscribe-sm > span.btn--icon > svg {
+  background-color: var(--primary);
+}
+.footer--btn-subscribe-sm > span.btn--icon > svg > path {
+  stroke: var(--secondary);
 }
 .footer--btn-subscribe-md {
   display: none;

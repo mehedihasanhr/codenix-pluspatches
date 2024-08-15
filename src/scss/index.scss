@@ -620,6 +620,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & > span.btn--icon {
+      display: block;
+      background: var(--primary);
+      color: var(--secondary);
+      & > svg {
+        background-color: var(--primary);
+        & > path {
+          stroke: var(--secondary);
+        }
+      }
+    }
   }
 
   &--btn-subscribe-md{
