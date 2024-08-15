@@ -50,13 +50,23 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: {
+    static: [{
       directory: path.join(__dirname, "public"),
-    },
+      watch: true
+    }, {
+      directory: path.join(__dirname, "src"),
+      watch: true
+  }],
     compress: true,
     port: 9000,
-    open: true,
-    historyApiFallback: true,
+    open: false,
+    liveReload: true,
+    watchFiles: 
+      [
+        "public/index.html",
+        "src/app.js",
+        "src/scss/index.scss",
+      ]
   },
   resolve: {
     extensions: [".js", ".scss"],

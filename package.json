@@ -33,5 +33,8 @@
   "browserslist": [
     "last 2 versions",
     "IE 10"
-  ]
+  ],
+  "dependencies": {
+    "global": "^4.4.0"
+  }
 }

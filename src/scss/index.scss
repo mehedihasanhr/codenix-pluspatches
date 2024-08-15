@@ -118,7 +118,7 @@ body {
 
 .hero {
   &-container {
-    padding: 96px 0;
+    padding: 96px 30px;
   }
 
   &-content {
@@ -130,9 +130,9 @@ body {
     margin-inline: auto;
   }
   &-heading {
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
-    line-height: 54px;
+    line-height: 40px;
     font-weight: 400;
     margin-bottom: 24px;
 
@@ -151,6 +151,13 @@ body {
     display: block;
     margin-bottom: 40px;
   }
+
+  @media (min-width: map-get($breakpoints, sm)) {
+    &-heading {
+      font-size: 40px;
+      line-height: 54px;
+  }
+}
 }
 
 .btn--hero-download {
@@ -232,14 +239,21 @@ body {
 .separator {
   height: 1px;
   width: 100%;
-  margin: 144px 0;
+  margin: 96px 0;
   background-color: var(--border);
+}
+
+@media (min-width: map-get($breakpoints, sm)) {
+  .separator {
+    margin: 144px 0;
+  }
 }
 
 // Sensor Patch Section
 .sensor {
   &--container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
@@ -248,11 +262,11 @@ body {
   &--content{
     min-width: 300px;
     width: fit-content;
+    text-align: center;
 
     &-heading {
-      font-size: 36px;
-      text-align: start;
-      line-height: 40px;
+      font-size: 30px;
+      line-height: 36px;
       font-weight: 400;
       margin-bottom: 24px;
   
@@ -267,20 +281,21 @@ body {
       text-decoration: underline;
       text-decoration-color: var(--primary);
       font-weight: 500;
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 
   &--cards{
     width: 100%;
     display: grid;
+    flex-direction: column;
     grid-template-columns: repeat(12, 1fr);
-    gap: 12px;
+    gap: 8px;
   }
 
   &--card{
-    grid-column: span 3;
+    grid-column: span 6;
 
     background: var(--secondary);
 
@@ -289,8 +304,8 @@ body {
 
     &-title {
       color: var(--foreground);
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 16px;
+      line-height: 24px;
       font-weight: 600;
       text-align: center;
       word-break: normal;
@@ -303,14 +318,65 @@ body {
       margin: 0 auto;
     }
   }
+
+  @media (min-width: map-get($breakpoints, sm)) {
+    &--container {
+      flex-direction: column;
+    }
+    &--content {
+      &-heading {
+        font-size: 36px;
+        line-height: 40px;
+      }
+      &-link {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    &--cards{
+      gap: 12px;
+
+      &-title {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  @media (min-width: map-get($breakpoints, lg)) {
+    &--container {
+      gap: 28px;
+      flex-direction: row;
+    }
+    &--content{
+      text-align: start;
+    }
+    &--card {
+      grid-column: span 4;
+    }
+  }
+
+  @media (min-width: map-get($breakpoints, xl)) {
+    &--container {
+      gap: 40px;
+    }
+    &--cards{
+      gap: 12px;
+    }
+    &--card {
+      grid-column: span 3;
+    }
+  }
 }
 
 // gallery section 
 .gallery {
+  overflow: hidden;
+
   &-heading {
-    font-size: 48px;
+    font-size: 30px;
     text-align: center;
-    line-height: 52px;
+    line-height: 36px;
     font-weight: 400;
     margin-bottom: 48px;
 
@@ -321,24 +387,41 @@ body {
   }
 
   &--row {
+    width: 1080px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 12px;
 
     &-cols-2 {
       grid-column: span 2;
-      width: fit-content;
-      height: fit-content;
+      width: 100%;
+      height: 100%;
     }
 
     &-cols-4 {
       grid-column: span 4;
-      width: fit-content;
-      height: fit-content;
+      width: 100%;
+      height: 100&;
     }
 
     &-img {
-      width: 100px;
+      width: 100%;
+      height: 200px;
+      border-radius: 16px;
+    }
+  }
+
+  @media (min-width: map-get($breakpoints, md)) {
+    &-heading {
+      font-size: 48px;
+      line-height: 52px;
+    }
+    &--row {
+      &-img {
+        width: 100%;
+        height: 280px;
+        border-radius: 20px;
+      }
     }
   }
 }
@@ -349,22 +432,23 @@ body {
   &--container {
     max-width: 966px;
     width: 100%;
-    padding: 64px;
+    padding: 24px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 96px;
-    margin: 140px auto;
-    border-radius: 24px;
+    margin: 96px auto;
+    border-radius: 20px;
     background: var(--primary);
   }
 
   &-heading {
-    font-size: 48px;
+    font-size: 30px;
     text-align: start;
-    line-height: 52px;
+    line-height: 36px;
     font-weight: 400;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     color: var(--secondary);
 
     & > span {
@@ -374,24 +458,58 @@ body {
   }
 
   &-content {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 28px;
     font-weight: 400;
     text-align: start;
     color: var(--secondary);
   }
 
+  &-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &-link {
-    display: block;
     color: var(--secondary);
     text-decoration: underline;
     text-decoration-color: var(--secondary);
     font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
     cursor: pointer;
     text-underline-offset: 3px;
+  }
+
+  @media (min-width: map-get($breakpoints, md)) {
+    &--container {
+      padding: 64px;
+      margin: 140px auto;
+      border-radius: 24px;
+    }
+    &-heading {
+      font-size: 48px;
+      line-height: 52px;
+      margin-bottom: 24px;
+    }
+  
+    &-content {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &-link {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  @media (min-width: map-get($breakpoints, lg)) {
+    &--container {
+      flex-direction: row;
+    }
   }
 }
 
@@ -419,7 +537,8 @@ body {
 // footer section
 .footer {
   &--container {
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
     margin: 48px auto 24px auto;
   }
 
@@ -427,18 +546,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 24px;
   }
 
   &--logo {
-    height: 60px;
-    width: 230px;
+    height: 40px;
+    width: 42px;
     display: flex;
     align-items: center;
     font-size: 24px;
   }
 
   &--divider-horizontal {
-    height: 48px;
+    height: 36px;
     width: 1px;
     background: var(--border);
   }
@@ -447,13 +567,13 @@ body {
     height: 1px;
     width: 100%;
     background: var(--border);
-    margin: 30px auto;
+    margin: 28px auto;
   }
 
   &--social-media {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
   }
 
   &--social-media-link {
@@ -465,7 +585,7 @@ body {
   }
 
   &--subscription {
-    height: 60px;
+    height: 52px;
     width: 100%;
     background-color: var(--secondary);
     border-radius: 48px;
@@ -477,9 +597,9 @@ body {
   &--input {
     border: 0;
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 24px;
     background: transparent;
 
     &::placeholder {
@@ -492,18 +612,66 @@ body {
     outline: none;
   }
 
-  &--btn-subscribe{
+  &--btn-subscribe-sm{
     border-radius: 44px;
-    height: 52px;
-    padding: 12px 24px;
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--btn-subscribe-md{
+    display: none;
   }
 
   &--copyright {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 20px;
     color: var(--foreground);
     text-align: center;
   }
 
+  @media (min-width: map-get($breakpoints, sm)) {
+    &--social-media-container {
+      margin: 0 0;
+    }
+    &--logo {
+      height: 60px;
+      width: 230px;
+      font-size: 24px;
+    }
+    &--divider-horizontal {
+      height: 48px;
+    }
+    &--social-media {
+      gap: 24px;
+    }
+    &--divider-vertical {
+      margin: 32px auto;
+    }
+    &--subscription {
+      height: 60px;
+    }
+    &--input {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    &--btn-subscribe-sm{
+      display: none;
+    }
+    &--btn-subscribe-md{
+      border-radius: 44px;
+      height: 52px;
+      padding: 12px;
+      display: inline-block;
+      padding: 12px 24px;
+    }
+    &--copyright {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 }

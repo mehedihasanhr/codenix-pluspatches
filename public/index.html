@@ -40,28 +40,30 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="contianer hero-container">
-        <div class="hero-content">
-          <h1 class="hero-heading">
-            High Protein <br/> Recipe
-            <span>Collection.</span>
-          </h1>
-
-          <p class="hero-description">
-            Discover a variety of meals, snacks, and desserts that help maintain
-            stable blood sugar levels without sacrificing taste.
-          </p>
-
-          <button class="hero btn btn--primary btn--hero-download">
-            Download Recipe Book
-           <span class="btn--icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M9.5 11.75L12 14.25L14.5 11.75M12 4.25V13.6412" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M20 16.75L19.7785 18.0788C19.6178 19.0432 18.7834 19.75 17.8057 19.75H6.19425C5.21658 19.75 4.3822 19.0432 4.22147 18.0788L4 16.75" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-           </span>
-            </span>
-          </button>
+      <section class="contianer">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="hero-heading">
+              High Protein <br/> Recipe
+              <span>Collection.</span>
+            </h1>
+  
+            <p class="hero-description">
+              Discover a variety of meals, snacks, and desserts that help maintain
+              stable blood sugar levels without sacrificing taste.
+            </p>
+  
+            <button class="hero btn btn--primary btn--hero-download">
+              Download Recipe Book
+             <span class="btn--icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9.5 11.75L12 14.25L14.5 11.75M12 4.25V13.6412" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 16.75L19.7785 18.0788C19.6178 19.0432 18.7834 19.75 17.8057 19.75H6.19425C5.21658 19.75 4.3822 19.0432 4.22147 18.0788L4 16.75" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+             </span>
+              </span>
+            </button>
+          </div>
         </div>
       </section>
       <!-- End Hero Section -->
@@ -170,6 +172,7 @@
 
           </div>
           <!-- gallery row  -->
+        <div class="gallery">
           <div class="gallery--row">
 
             <div class="gallery--row-cols-2">
@@ -188,11 +191,6 @@
                 <img class="gallery--row-img" src="./assets/images/img-3.jpeg" alt="image-4">
             </div>
 
-          </div>
-            <!-- gallery row end -->
-          <!-- gallery row  -->
-            <div class="gallery--row">
-
               <div class="gallery--row-cols-4">
                   <img class="gallery--row-img" src="./assets/images/img-3.jpeg" alt="image-4">
               </div>
@@ -208,6 +206,8 @@
               <div class="gallery--row-cols-2">
                   <img class="gallery--row-img" src="./assets/images/img-1.jpeg" alt="image-3">
               </div>
+          </div>
+        </div>
             <!-- gallery row end -->
 
          </section>
@@ -231,7 +231,7 @@
             <!-- header & content section end -->
 
             <!-- download btn section  -->
-             <div >
+             <div class="book-download-button-container">
               <!-- button  -->
               <button class="hero btn btn--accent btn--book-download">
                 Download Recipe Book
@@ -278,8 +278,16 @@
 
               <!-- email subscription section  -->
                 <form class="footer--subscription">
-                  <input class="footer--input" type="text" placeholder="Enter Email">
-                  <button type="submit" class="btn btn--primary footer--btn-subscribe">Subscribe</button>
+                  <input class="footer--input" type="email" required placeholder="Enter Email">
+                  <button type="submit" class="btn btn--primary footer--btn-subscribe-sm">
+                    <span class="btn--icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M9.5 11.75L12 14.25L14.5 11.75M12 4.25V13.6412" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M20 16.75L19.7785 18.0788C19.6178 19.0432 18.7834 19.75 17.8057 19.75H6.19425C5.21658 19.75 4.3822 19.0432 4.22147 18.0788L4 16.75" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                   </span>
+                  </button>
+                  <button type="submit" class="btn btn--primary footer--btn-subscribe-md">Subscribe</button>
                 </form>
               <!-- email subscription section end  -->
 
