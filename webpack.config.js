@@ -34,14 +34,6 @@ module.exports = {
           filename: "images/[name][ext][query]",
         },
       },
-      // Fonts
-      {
-        test: /\.(woff(2)?|eot|ttf|otf)$/,
-        type: "asset/resource",
-        generator: {
-          filename: "fonts/[name][ext][query]",
-        },
-      },
     ],
   },
   plugins: [
@@ -50,23 +42,21 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: [{
-      directory: path.join(__dirname, "public"),
-      watch: true
-    }, {
-      directory: path.join(__dirname, "src"),
-      watch: true
-  }],
+    static: [
+      {
+        directory: path.join(__dirname, "public"),
+        watch: true,
+      },
+      {
+        directory: path.join(__dirname, "src"),
+        watch: true,
+      },
+    ],
     compress: true,
     port: 9000,
     open: false,
     liveReload: true,
-    watchFiles: 
-      [
-        "public/index.html",
-        "src/app.js",
-        "src/scss/index.scss",
-      ]
+    watchFiles: ["public/index.html", "src/app.js", "src/scss/index.scss"],
   },
   resolve: {
     extensions: [".js", ".scss"],

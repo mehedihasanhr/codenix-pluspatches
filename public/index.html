@@ -1,308 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="container navbar">
-        <a href="index.html"> BrandLogo </a>
 
-        <div class="nav-list">
-          <button type="button" class="btn btn--accent nav--download-btn">
-            Download
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/LogoIcon.png" type="image/x-icon">
+
+  <title>Plus Patches</title>
+
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="container navbar">
+      <a href="index.html">
+        <img src="assets/images/pluspatches.svg" alt="logo" width="230px" height="60px" className="navbar--logo" />
+      </a>
+
+      <div class="nav-list">
+        <button type="button" class="btn btn--accent nav--download-btn">
+          Download
+        </button>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+          <button class="btn btn--outline btn--icon dropdown-trigger">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+              fill="none">
+              <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
 
-          <!-- Dropdown Menu -->
-          <div class="dropdown">
-            <button class="btn btn--outline btn--icon dropdown-trigger">
-               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
-                  <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <div class="dropdown-content align-right">
+            <div class="dropdown-item">Visit PlusPatches</div>
+            <div class="dropdown-item">Shop Plus Patches</div>
+            <div class="dropdown-item">Download Recipe Book</div>
+          </div>
+        </div>
+
+        <!-- End Dropdown -->
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="contianer">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-heading">
+            High Protein <br /> Recipe
+            <span>Collection.</span>
+          </h1>
+
+          <p class="hero-description">
+            Discover a variety of meals, snacks, and desserts that help maintain
+            stable blood sugar levels without sacrificing taste.
+          </p>
+
+          <a href="assets/HealthyRecipeBook.pdf" download  class="hero btn btn--primary btn--hero-download">
+            Download Recipe Book
+            <span class="btn--icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9.5 11.75L12 14.25L14.5 11.75M12 4.25V13.6412" stroke="#141B34" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M20 16.75L19.7785 18.0788C19.6178 19.0432 18.7834 19.75 17.8057 19.75H6.19425C5.21658 19.75 4.3822 19.0432 4.22147 18.0788L4 16.75"
+                  stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-            </button>
-
-            <div class="dropdown-content align-right">
-              <div class="dropdown-item">Visit PlusPatches</div>
-              <div class="dropdown-item">Shop Plus Patches</div>
-              <div class="dropdown-item">Download Recipe Book</div>
-            </div>
-          </div>
-
-          <!-- End Dropdown -->
+            </span>
+            </span>
+          </a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
+    <!-- End Hero Section -->
 
-    <main>
-      <!-- Hero Section -->
-      <section class="contianer">
-        <div class="hero-container">
-          <div class="hero-content">
-            <h1 class="hero-heading">
-              High Protein <br/> Recipe
-              <span>Collection.</span>
-            </h1>
-  
-            <p class="hero-description">
-              Discover a variety of meals, snacks, and desserts that help maintain
-              stable blood sugar levels without sacrificing taste.
-            </p>
-  
-            <button class="hero btn btn--primary btn--hero-download">
-              Download Recipe Book
-             <span class="btn--icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M9.5 11.75L12 14.25L14.5 11.75M12 4.25V13.6412" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M20 16.75L19.7785 18.0788C19.6178 19.0432 18.7834 19.75 17.8057 19.75H6.19425C5.21658 19.75 4.3822 19.0432 4.22147 18.0788L4 16.75" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-             </span>
-              </span>
-            </button>
-          </div>
+
+
+    <!-- Services -->
+    <section class="container">
+      <div class="service--container">
+        <!-- Service card -->
+        <div class="service--card">
+          <img src="assets/images/diverse-meal-planner.svg" alt="" width="68px" height="68px"
+            class="service--card-image" />
+          <h2 class="service--card-title">
+            Diverse Meal Planner
+          </h2>
+          <p class="service--card-text">Customize menus, adjust portion sizes, and create shopping lists effortlessly.
+          </p>
         </div>
-      </section>
-      <!-- End Hero Section -->
 
-
-
-      <!-- Services -->
-       <section class="container">
-          <div class="service--container">
-            <!-- Service card -->
-            <div class="service--card"> 
-
-              <h2 class="service--card-title">
-                Diverse Meal Planner
-              </h2>
-              <p class="service--card-text">Customize menus, adjust portion sizes, and create shopping lists effortlessly.</p>
-            </div>
-
-            <!-- Service card -->
-            <div class="service--card"> 
-
-              <h2 class="service--card-title">
-                Easy to Follow
-              </h2>
-              <p class="service--card-text">You'll find recipes that come with step-by-step instructions.</p>
-            </div>
-
-            <!-- Service card -->
-            <div class="service--card"> 
-
-              <h2 class="service--card-title">
-                Expert Nutritionist Tips
-              </h2>
-              <p class="service--card-text">Get expert advice from certified nutritionists and diabetes educators.</p>
-            </div>
-          </div>
-       </section>
-       <!-- End Services -->
-
-       <!-- separator start  -->
-        <div class="container">
-          <div class="separator"></div>
+        <!-- Service card -->
+        <div class="service--card">
+          <img src="assets/images/easy-to-follow.svg" alt="" width="68px" height="68px" class="service--card-image" />
+          <h2 class="service--card-title">
+            Easy to Follow
+          </h2>
+          <p class="service--card-text">You'll find recipes that come with step-by-step instructions.</p>
         </div>
-       <!-- separator end  -->
 
-       <!-- Sensor Patch  -->
-        <section class="container">
-          <div class="sensor--container">
-            <div class="sensor--content">
-
-              <h1 class="sensor--content-heading">
-                Premium Quality <br/> Diabetic
-                <span>Sensor <br/> Patches.</span>
-              </h1>
-
-              <a href="/" class="sensor--content-link">See All Products</a>
-            </div>
-
-            <!-- sensor cards  -->
-            <div class="sensor--cards">
-
-              <!-- sensor card  -->
-              <div class="sensor--card">
-                <div class="sensor--card-image"></div>
-                <h3 class="sensor--card-title">Dexcom G6</h3>
-              </div>
-
-              <!-- sensor card  -->
-              <div class="sensor--card">
-                <div class="sensor--card-image"></div>
-                <h3 class="sensor--card-title">Dexcom G7</h3>
-              </div>
-
-              <!-- sensor card  -->
-              <div class="sensor--card">
-                <div class="sensor--card-image"></div>
-                <h3 class="sensor--card-title">FreeStyle Libre</h3>
-              </div>
-
-              <!-- sensor card  -->
-              <div class="sensor--card">
-                <div class="sensor--card-image"></div>
-                <h3 class="sensor--card-title">Omnipod</h3>
-              </div>
-
-            </div>
-          </div>
-        </section>
-        
-       <!-- Sensor Patch End -->
-
-        <!-- separator start  -->
-        <div class="container">
-          <div class="separator"></div>
+        <!-- Service card -->
+        <div class="service--card">
+          <img src="assets/images/expert-nutritionist-tips.svg" alt="" width="68px" height="68px"
+            class="service--card-image" />
+          <h2 class="service--card-title">
+            Expert Nutritionist Tips
+          </h2>
+          <p class="service--card-text">Get expert advice from certified nutritionists and diabetes educators.</p>
         </div>
-        <!-- separator end  -->
+      </div>
+    </section>
+    <!-- End Services -->
 
-        <!-- product user image gallery  -->
-         <section class="container">
-          <div>
+    <!-- separator start  -->
+    <div class="container">
+      <div class="separator"></div>
+    </div>
+    <!-- separator end  -->
 
-            <h1 class="gallery-heading">
-              People are using our <br/>
-              <span>Sensor Patches.</span>
-            </h1>
+    <!-- Sensor Patch  -->
+    <section class="container">
+      <div class="sensor--container">
+        <div class="sensor--content">
 
+          <h1 class="sensor--content-heading">
+            Premium Quality <br /> Diabetic
+            <span>Sensor <br /> Patches.</span>
+          </h1>
+
+          <a href="/" class="sensor--content-link">See All Products</a>
+        </div>
+
+        <!-- sensor cards  -->
+        <div class="sensor--cards">
+
+          <!-- sensor card  -->
+          <div class="sensor--card">
+            <div class="sensor--card-image">
+              <img src="assets/images/Dexcomg6.png" alt="" width="138" height="98" />
+            </div>
+            <h3 class="sensor--card-title">Dexcom G6</h3>
           </div>
-          <!-- gallery row  -->
-        <div class="gallery">
-          <div class="gallery--row">
 
-            <div class="gallery--row-cols-2">
-                <img class="gallery--row-img" src="./assets/images/img-1.jpeg" alt="image-1">
-            </div>
+          <!-- sensor card  -->
+          <div class="sensor--card">
+            <img src="assets/images/Dexcomg7.png" alt="" width="100" height="98" class="sensor--card-image"
+              style="width:100px;" />
+            <h3 class="sensor--card-title">Dexcom G7</h3>
+          </div>
 
-            <div class="gallery--row-cols-4">
-                <img class="gallery--row-img" src="./assets/images/img-2.jpeg" alt="image-2">
-            </div>
+          <!-- sensor card  -->
+          <div class="sensor--card">
+            <img src="assets/images/Dexcomg8.png" alt="" width="138" height="98" class="sensor--card-image"
+              style="width:100px;" />
+            <h3 class="sensor--card-title">FreeStyle Libre</h3>
+          </div>
 
-            <div class="gallery--row-cols-2">
-                <img class="gallery--row-img" src="./assets/images/img-1.jpeg" alt="image-3">
-            </div>
+          <!-- sensor card  -->
+          <div class="sensor--card">
+            <img src="assets/images/Omnipod.png" alt="" width="138" height="98" class="sensor--card-image" />
+            <h3 class="sensor--card-title">Omnipod</h3>
+          </div>
 
-            <div class="gallery--row-cols-4">
-                <img class="gallery--row-img" src="./assets/images/img-3.jpeg" alt="image-4">
-            </div>
+        </div>
+      </div>
+    </section>
 
-              <div class="gallery--row-cols-4">
-                  <img class="gallery--row-img" src="./assets/images/img-3.jpeg" alt="image-4">
-              </div>
+    <!-- Sensor Patch End -->
 
-              <div class="gallery--row-cols-2">
-                  <img class="gallery--row-img" src="./assets/images/img-1.jpeg" alt="image-1">
-              </div>
+    <!-- separator start  -->
+    <div class="container">
+      <div class="separator"></div>
+    </div>
+    <!-- separator end  -->
 
-              <div class="gallery--row-cols-4">
-                  <img class="gallery--row-img" src="./assets/images/img-2.jpeg" alt="image-2">
-              </div>
+    <!-- product user image gallery  -->
+    <section class="container">
+      <div>
 
-              <div class="gallery--row-cols-2">
-                  <img class="gallery--row-img" src="./assets/images/img-1.jpeg" alt="image-3">
-              </div>
+        <h1 class="gallery-heading">
+          People are using our <br />
+          <span>Sensor Patches.</span>
+        </h1>
+
+      </div>
+      <!-- gallery row  -->
+      <div class="gallery">
+        <div class="gallery--row">
+
+          <div class="gallery--row-cols-2">
+            <img class="gallery--row-img" src="./assets/images/img-1.jpeg" alt="image-1">
+          </div>
+
+          <div class="gallery--row-cols-4">
+            <img class="gallery--row-img" src="./assets/images/img-2.jpeg" alt="image-2">
+          </div>
+
+          <div class="gallery--row-cols-2">
+            <img class="gallery--row-img" src="./assets/images/img-1.jpeg" alt="image-3">
+          </div>
+
+          <div class="gallery--row-cols-4">
+            <img class="gallery--row-img" src="./assets/images/img-3.jpeg" alt="image-4">
+          </div>
+
+          <div class="gallery--row-cols-4">
+            <img class="gallery--row-img" src="./assets/images/img-3.jpeg" alt="image-4">
+          </div>
+
+          <div class="gallery--row-cols-2">
+            <img class="gallery--row-img" src="./assets/images/img-1.jpeg" alt="image-1">
+          </div>
+
+          <div class="gallery--row-cols-4">
+            <img class="gallery--row-img" src="./assets/images/img-2.jpeg" alt="image-2">
+          </div>
+
+          <div class="gallery--row-cols-2">
+            <img class="gallery--row-img" src="./assets/images/img-1.jpeg" alt="image-3">
           </div>
         </div>
-            <!-- gallery row end -->
+      </div>
+      <!-- gallery row end -->
 
-         </section>
-        <!-- product user image gallery end -->
+    </section>
+    <!-- product user image gallery end -->
 
-        <!-- Book download section  -->
-         <section class="container">
-          <div class="book-download--container">
+    <!-- Book download section  -->
+    <section class="container">
+      <div class="book-download--container">
 
-            <!-- header & content section -->
-            <div>
-              <h1 class="book-download-heading">
-                Download Our <br/>
-                <span>Recipe Book.</span>
-              </h1>
+        <!-- <img src="assets/images/watermark.svg" alt="" width="100px" height="96px" class="left-top-image" />
+        <img src="assets/images/watermark.svg" alt="" width="100px" height="96px" class="right-bottom-image"/> -->
 
-              <h3 class="book-download-content">
-                Unlock the full potential of your diabetes-friendly recipe with our downloadable recipe book.
-              </h3>
-            </div>
-            <!-- header & content section end -->
+        <!-- header & content section -->
+        <div>
+          <h1 class="book-download-heading">
+            Download Our <br />
+            <span>Recipe Book.</span>
+          </h1>
 
-            <!-- download btn section  -->
-             <div class="book-download-button-container">
-              <!-- button  -->
-              <button class="hero btn btn--accent btn--book-download">
-                Download Recipe Book
-               <span class="btn--icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M9.5 11.75L12 14.25L14.5 11.75M12 4.25V13.6412" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M20 16.75L19.7785 18.0788C19.6178 19.0432 18.7834 19.75 17.8057 19.75H6.19425C5.21658 19.75 4.3822 19.0432 4.22147 18.0788L4 16.75" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-               </span>
-              </button>
+          <h3 class="book-download-content">
+            Unlock the full potential of your diabetes-friendly recipe with our downloadable recipe book.
+          </h3>
+        </div>
+        <!-- header & content section end -->
 
-              <a href="/" class="book-download-link">Visit PlusPatches</a>
-             </div>
-            <!-- download btn section end -->
+        <!-- download btn section  -->
+        <div class="book-download-button-container">
+          <!-- button  -->
+          <a href="assets/HealthyRecipeBook.pdf" download class="hero btn btn--accent btn--book-download">
+            Download Recipe Book
+            <span class="btn--icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9.5 11.75L12 14.25L14.5 11.75M12 4.25V13.6412" stroke="#141B34" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M20 16.75L19.7785 18.0788C19.6178 19.0432 18.7834 19.75 17.8057 19.75H6.19425C5.21658 19.75 4.3822 19.0432 4.22147 18.0788L4 16.75"
+                  stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
 
+          <a href="https://pluspatches.com/" class="book-download-link">Visit PlusPatches</a>
+        </div>
+        <!-- download btn section end -->
+
+      </div>
+    </section>
+    <!-- Book download section end -->
+
+    <!-- footer  -->
+    <section class="container">
+      <div class="footer--container">
+
+        <!-- social media section  -->
+        <div class="footer--social-media-container">
+
+          <!-- Logo  -->
+          <div class="footer--logo">
+            <img 
+              src="assets/images/pluspatches.svg" 
+              alt="logo"
+              width="230px"
+              height="60px"
+              class="footer--logo-long"
+            />
+
+            <img 
+              src="assets/images/LogoIcon.png" 
+              alt="logo"
+              width="48px"
+              height="48px"
+              class="footer--logo-short"
+            />
           </div>
-         </section>
-        <!-- Book download section end -->
 
-        <!-- footer  -->
-          <section class="container">
-            <div class="footer--container">
-              
-              <!-- social media section  -->
-               <div class="footer--social-media-container">
+          <div class="footer--divider-horizontal"></div>
 
-                <!-- Logo  -->
-                <div class="footer--logo"> 
-                  Logo
-                </div>
+          <!-- social media link  -->
+          <div class="footer--social-media">
+            <a class="footer--social-media-link" target="_blank" referrerpolicy="no-referrer" href="https://www.facebook.com/people/PlusPatches/100088767525365/">Facebook</a>
+            <a class="footer--social-media-link" target="_blank" referrerpolicy="no-referrer" href="https://www.instagram.com/pluspatches/">Instagram</a>
+          </div>
+        </div>
+        <!-- social media section end  -->
 
-                <div class="footer--divider-horizontal"></div>
+        <!-- divider  -->
+        <div class="footer--divider-vertical"></div>
 
-                <!-- social media link  -->
-                <div class="footer--social-media">
-                  <a class="footer--social-media-link" href="/">Facebook</a>
-                  <a class="footer--social-media-link" href="/">Instagram</a>
-                </div>
-               </div>
-              <!-- social media section end  -->
+        <!-- email subscription section  -->
+        <form class="footer--subscription">
+          <input class="footer--input" type="email" required placeholder="Enter Email">
+          <button type="submit" class="btn btn--primary footer--btn-subscribe-sm">
+            <span class="btn--icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                fill="none">
+                <path d="M7 7.5L9.94202 9.23943C11.6572 10.2535 12.3428 10.2535 14.058 9.23943L17 7.5"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M11.5 19.5C11.5 19.5 10.0691 19.4878 9.09883 19.4634C5.95033 19.3843 4.37608 19.3448 3.24496 18.2094C2.11383 17.0739 2.08114 15.5412 2.01577 12.4756C1.99475 11.4899 1.99474 10.5101 2.01576 9.52438C2.08114 6.45885 2.11382 4.92608 3.24495 3.79065C4.37608 2.65521 5.95033 2.61566 9.09882 2.53656C11.0393 2.48781 12.9607 2.48781 14.9012 2.53657C18.0497 2.61568 19.6239 2.65523 20.7551 3.79066C21.8862 4.92609 21.9189 6.45886 21.9842 9.52439C21.9918 9.88124 21.9967 10.4995 21.9988 11"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14 17.5H22M18 21.5L18 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <button type="submit" class="btn btn--primary footer--btn-subscribe-md">Subscribe</button>
+        </form>
+        <!-- email subscription section end  -->
 
-              <!-- divider  -->
-              <div class="footer--divider-vertical"></div>
+        <!-- divider  -->
+        <div class="footer--divider-vertical"></div>
 
-              <!-- email subscription section  -->
-                <form class="footer--subscription">
-                  <input class="footer--input" type="email" required placeholder="Enter Email">
-                  <button type="submit" class="btn btn--primary footer--btn-subscribe-sm">
-                    <span class="btn--icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
-                        <path d="M7 7.5L9.94202 9.23943C11.6572 10.2535 12.3428 10.2535 14.058 9.23943L17 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M11.5 19.5C11.5 19.5 10.0691 19.4878 9.09883 19.4634C5.95033 19.3843 4.37608 19.3448 3.24496 18.2094C2.11383 17.0739 2.08114 15.5412 2.01577 12.4756C1.99475 11.4899 1.99474 10.5101 2.01576 9.52438C2.08114 6.45885 2.11382 4.92608 3.24495 3.79065C4.37608 2.65521 5.95033 2.61566 9.09882 2.53656C11.0393 2.48781 12.9607 2.48781 14.9012 2.53657C18.0497 2.61568 19.6239 2.65523 20.7551 3.79066C21.8862 4.92609 21.9189 6.45886 21.9842 9.52439C21.9918 9.88124 21.9967 10.4995 21.9988 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M14 17.5H22M18 21.5L18 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                   </span>
-                  </button>
-                  <button type="submit" class="btn btn--primary footer--btn-subscribe-md">Subscribe</button>
-                </form>
-              <!-- email subscription section end  -->
+        <!-- copyright section  -->
+        <h4 class="footer--copyright">© 2024 pluspatchs, All right Reserved</h4>
+      </div>
+    </section>
+    <!-- footer end -->
 
-              <!-- divider  -->
-              <div class="footer--divider-vertical"></div>
+  </main>
 
-              <!-- copyright section  -->
-               <h4 class="footer--copyright">© 2024 [BrandName], All right Reserved</h4>
-            </div>
-          </section>
-        <!-- footer end -->
+  <script src="assets/js/bundle.js"></script>
+</body>
 
-    </main>
-
-    <script src="assets/js/bundle.js"></script>
-  </body>
 </html>
